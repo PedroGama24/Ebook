@@ -317,7 +317,7 @@ h6{
 
 .home{
 
-    background-image: url("./asset/Dinheiro_1.png");
+    background-image: url("./asset/Sao_mais_de_9.500_dOWNLOADS_1.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center left;
@@ -326,7 +326,7 @@ h6{
 
 .home_content{
 
-    padding: 150px 15px 0;
+    padding: 200px 15px 100px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -356,7 +356,7 @@ h6{
 .profession_text{
 
     font-family: "Exo 2",sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     color: #fff;
     text-transform: uppercase;
     line-height: 1.2;
@@ -832,7 +832,8 @@ h6{
 }
 
 .selo{
-    margin-left: 400px;
+    margin-left: 0;
+    margin-top: 100px;
 }
 
 /* CONTACT */
@@ -961,16 +962,54 @@ textarea{
     }
 
 
+   /*  Video */
+
+  .div-video{
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 10px;
+    border-color: #004aad;
+    border-radius: 10px;
+  }
+
+  .div-video video{
+    width: 100%;
+  }
+ 
+
+   
+
 
 /* Breakpoint */
 
 
 @media screen and (min-width: 768px) {
 
-    
+    /* video */
+
+    .div-video{
+    width: 700px;
+    height: 500px;
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 350px;
+    border-radius: 10px;
+  }
+
+  .div-video video{
+    width: 100%;
+  }
+
+  .selo{
+    margin-left: 400px;
+    margin-top: 100px;
+}
 
     .home{
         background-position: center center;
+        background-image: url(/asset/Design_sem_nome_21.png);
     }
 
     .home_content{
@@ -1106,6 +1145,8 @@ textarea{
 }
 
 @media screen and ( min-width: 1200px ){
+
+    /* Video */
 
     .container{
         max-width: 1140px;
