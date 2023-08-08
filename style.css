@@ -326,7 +326,7 @@ h6{
 
 .home_content{
 
-    padding: 200px 15px 100px;
+    padding: 200px 15px 150px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -581,14 +581,14 @@ h6{
 }
 
 
-.about_buttons .button.dowload{
+.about_buttons .button.dowload .button-video{
 
     background-color: transparent;
 
 }
 
 
-.about_buttons .button.dowload:hover{
+.about_buttons .button.dowload.button-video:hover{
 
     background-color: #fff;
 
@@ -966,17 +966,71 @@ textarea{
 
   .div-video{
     width: 300px;
-    height: 500px;
+    height: 180px;
     position: absolute;
     margin-top: 350px;
     margin-left: 10px;
-    border-color: #004aad;
-    border-radius: 10px;
+    border-color: green;
+    border-radius: 20px;
+  }
+  
+  .div-video::after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: #fff;
+    z-index: -2;
+    filter: blur(50px);
   }
 
-  .div-video video{
-    width: 100%;
+  .div-video::after,
+  .div-video::before{
+    background: linear-gradient(235deg,#004aad,#fff);
   }
+
+  .div-video iframe{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  /* Button-Video */
+
+  .button-video {
+    box-shadow: 0 0 5px green, 0 0 25px green;
+}
+
+    .button-video {
+    max-width: max-content;
+    padding: 8px 35px;
+    background-color: #56ad45;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 1s;
+    margin-top: 20px;
+}
+
+.button-video{
+    box-shadow: 0 0 5px green,
+    0 0 25px green;
+}
+.button-video:hover{
+    box-shadow: 0 0 5px green,
+        0 0 25px green, 0 0 50px green,
+        0 0 100px green, 0 0 200px green;
+}
+
+.button-video:hover{
+
+    background-color: #fff;
+    color: #49559a;
+
+}
  
 
    
@@ -990,17 +1044,53 @@ textarea{
     /* video */
 
     .div-video{
-    width: 700px;
-    height: 500px;
+    width: 560px;
+    height: 320px;
     position: absolute;
     margin-top: 220px;
     margin-left: 350px;
     border-radius: 10px;
   }
 
-  .div-video video{
+  .div-video iframe{
     width: 100%;
   }
+
+   /* Button-Video */
+
+   .button-video {
+    box-shadow: 0 0 5px green, 0 0 25px green;
+}
+
+    .button-video {
+    max-width: max-content;
+    padding: 10px 100px;
+    background-color: #56ad45;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    transition: 1s;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.button-video{
+    box-shadow: 0 0 5px green,
+    0 0 25px green;
+}
+.button-video:hover{
+    box-shadow: 0 0 5px green,
+        0 0 25px green, 0 0 50px green,
+        0 0 100px green, 0 0 200px green;
+}
+
+.button-video:hover{
+
+    background-color: #fff;
+    color: #49559a;
+
+}
 
   .selo{
     margin-left: 400px;
