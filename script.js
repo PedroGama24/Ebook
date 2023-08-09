@@ -95,3 +95,6 @@
         sr.reveal('.about_content, .contact_container, .skills_wrapper, .count_wrapper', {delay: 500});
         sr.reveal('.social_list, .title_wrapper, .work_list', {interval: 250});
         sr.reveal('.service_item, .team_item, .work_item, .input_field', {interval: 250});
+        sr.reveal('.heading, .reviews-container, .rev-img, .box, .stars, .selo', {interval: 250});
+
+

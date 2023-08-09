@@ -326,7 +326,7 @@ h6{
 
 .home_content{
 
-    padding: 200px 15px 150px;
+    padding: 200px 10px 150px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -921,7 +921,7 @@ textarea{
 
 /* back BTN TOP */
 
-    .btn-top{
+.btn-top{
         position: fixed;
         bottom: 30px;
         right: 30px;
@@ -951,14 +951,14 @@ textarea{
 
     /* Extras */
 
-    .button{
-        box-shadow: 0 0 5px green,
+.button{
+    box-shadow: 0 0 5px green,
         0 0 25px green;
     }
-    .button:hover{
-        box-shadow: 0 0 5px green,
-        0 0 25px green, 0 0 50px green,
-        0 0 100px green, 0 0 200px green;
+.button:hover{
+    box-shadow: 0 0 5px green,
+    0 0 25px green, 0 0 50px green,
+    0 0 100px green, 0 0 200px green;
     }
 
 
@@ -1031,9 +1031,88 @@ textarea{
     color: #49559a;
 
 }
- 
 
-   
+
+    /* Reviews */
+
+.reviews{
+    background-image: linear-gradient(90deg,#004aad,#cb6ce6);
+}
+ 
+.heading{
+    font-size: 38px;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    background-image: linear-gradient(90deg,#004aad,#cb6ce6);
+}
+
+
+.reviews-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+    background-image: linear-gradient(90deg,#004aad,#cb6ce6);
+    margin-top: 40px;
+}
+
+.rev-img{
+    width: 70px;
+    height: 70px;
+}
+
+.rev-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #cb6ce6;
+}
+
+.reviews-container .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 1px 4px 41px #fff;
+    border-radius: 0.5rem;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.reviews-container .box h2{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0.5rem 0 0.5rem;
+    color: #fff;
+}
+
+.reviews-container .box p{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0.5rem 0 0.5rem;
+    color: #fff;
+}
+
+.reviews-container .box .stars .bx{
+    color: orange;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(180deg,#004aad,#cb6ce6);
+}
+
+::-webkit-scrollbar-track-piece{
+    color: gray;
+}
 
 
 /* Breakpoint */
@@ -1136,7 +1215,7 @@ textarea{
     .skills_items{
         grid-template-columns: repeat(2, 1fr);
         column-gap: 100px;
-        padding-right: 300px;
+        padding-right: 30px;
     }
 
     .work_list{
